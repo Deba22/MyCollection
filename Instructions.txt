@@ -1,0 +1,24 @@
+INSTRUCTIONS TO UPLOAD ARCTICLE
+
+1. Create a new word document and add the title, description and author. Font size is 11 and font style is Calibri (Body).
+2. Make it password protected i.e ready only file. Go to File->Info->Protect document->Restrict editing. Then enter password and confirm password.
+3. Select Editing restictions and dont check everyone and then click 'Yes, start enforcing protection'.
+4. Save the document.
+5. Name the document.
+6. Upload the file to https://console.firebase.google.com/u/1/project/mymomscollection-876ef/storage/mymomscollection-876ef.appspot.com/files~2F under respective author.
+7. Add a new db record
+Arcticlename
+ArcticleDesc
+Author
+DownloadUrl
+PublishDate
+8.DownloadUrl is url of that specific file located in the storage https://firebasestorage.googleapis.com/v0/b/mymomscollection-876ef.appspot.com/o/Golda%2FDIVTTI%20%20AXECHI%E2%80%A6%20DIVTTI%20%20%20BHORVANXEACHI.docx?alt=media&token=e0e2ad03-d693-4ee7-84cc-e69227062de6. Use ''copy link address'' to get the Url.
+9. ArcticleDesc is the description of the ar.ticle.
+10. Use https://www.textfixer.com/html/convert-text-html.php to get the HTML formatted text.
+11. Check  Use line break tags only
+12. HTML Preference:  select <br> or  <br />
+13. Select 'Encode characters with accents and similar'
+14. Copy contents/description from word document into notepad file. Enter a new line whereever required and hten copy it in the textarea.
+15. Click convert text to HTML
+16. Click copy to clipboard
+17. Check if it renders fine on mobile

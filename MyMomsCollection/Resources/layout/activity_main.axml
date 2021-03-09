@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+ android:background="@color/ListBgColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/TopCardlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:background="@drawable/gradient_back"
+			android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtAppTitle"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="App Name"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp" />
+            <refractored.controls.CircleImageView
+                android:id="@+id/profile_image"
+                android:src="@drawable/golda"
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:civ_border_width="4dp"
+                app:civ_border_color="@android:color/white"
+                android:paddingTop="30dp" />
+            <TextView
+                android:id="@+id/txtDescription"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Hi, My name is Golda Gracias and I live in the beautiful village of Cansaulim located in Goa.I am amateur writer and this is ‘My Collection’ of various articles written in Roman Konkani."
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+	
+ <android.support.v7.widget.CardView
+        android:layout_below="@id/TopCardlayout"
+        android:id="@+id/BottomCardlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+app:cardBackgroundColor="@color/ListBgColor"
+>
+        <Button
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:id="@+id/btnStart"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="LET'S GET STARTED"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+			android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/RoundedButtonShape"
+            android:layout_centerInParent="true" />
+			<com.airbnb.lottie.LottieAnimationView
+	android:id="@+id/animation_view"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	app:lottie_fileName="7434-confetti.json"
+	app:lottie_loop="false"
+	app:lottie_autoPlay="false" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>

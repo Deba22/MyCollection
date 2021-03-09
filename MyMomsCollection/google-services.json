@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "160809879547",
+    "firebase_url": "https://mymomscollection-876ef.firebaseio.com",
+    "project_id": "mymomscollection-876ef",
+    "storage_bucket": "mymomscollection-876ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160809879547:android:2f3de8974e0dac3d",
+        "android_client_info": {
+          "package_name": "com.debweb.mymomscollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160809879547-poq2qll79a5hi5kphcul6gmgt369re27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc8ekpNapVJcpl8svRTqmZFmpaIbJjUD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

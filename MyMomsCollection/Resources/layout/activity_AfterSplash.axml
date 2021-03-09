@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	 android:background="@color/ListBgColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	 <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" >
+		<LinearLayout 
+			android:id="@+id/HeaderCover"
+			android:background="@color/colorPrimary"
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		/>
+		
+		<TextView 
+			android:text="My Collection"
+			android:textSize="50sp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="25dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:textColor="@android:color/white"
+			 android:fontFamily="@font/sugiyamafont"
+		/>
+		
+			<TextView 
+			android:id="@+id/txtVersion"
+			android:text=""
+			android:textSize="11sp"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="85dp"
+			android:layout_marginTop="78dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:textColor="@android:color/white"
+			
+		/>
+  
+	</RelativeLayout>
+	 <RelativeLayout
+        android:id="@+id/layouBottomMost"
+		 android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+			android:background="@color/colorPrimary"
+        android:layout_height="55dp" >
+		
+	</RelativeLayout>
+	<RelativeLayout
+		
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientbothcurve"
+		android:layout_below="@id/layoutTop"
+		android:layout_alignParentTop="@id/layouBottomMost"
+		android:layout_marginTop="-135dp"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:layout_marginBottom="40dp"
+		>
+		<TextView 
+			android:id="@+id/txtInstructions"
+			 android:fontFamily="@font/nunitosansfont"
+            android:text="Swipe left/right to choose an author"
+			android:textSize="13sp"
+			 android:textStyle="bold"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="15dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:textColor="@android:color/black"
+			
+		/>
+		
+<com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+		android:id="@+id/horizontal_viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+		app:icvp_scroll_duration="250"
+		app:icvp_center_page_scale_offset="30dp"
+		app:icvp_min_page_scale_offset="5dp"
+		app:icvp_max_page_scale="0.85"
+		app:icvp_min_page_scale="0.55"
+		 app:icvp_medium_scaled="false"/>
+		</RelativeLayout>
+
+	
+
+  
+
+	
+
+	
+	
+</RelativeLayout>

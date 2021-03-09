@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  xmlns:app="http://schemas.android.com/apk/res-auto" 
+  android:id="@+id/main_content" 
+	android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" 
+  android:background="@color/ListBgColor">  
+    
+          <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorPrimary"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" 
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+              <TextView
+						android:id="@+id/BarTitle"
+   android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+android:textAlignment="viewStart"
+  android:gravity="center"
+   android:text="My Collection"
+android:fontFamily="@font/sugiyamafont"
+   android:textStyle="bold"
+   android:textSize="26sp"
+   android:textColor="#fff"
+       >
+              </TextView>
+					<EditText android:id="@+id/Searchtext"
+						   android:layout_width="230dp"
+						android:hint="Search..."
+						android:textColorHint="@color/material_grey_600"
+    android:layout_height="wrap_content"
+						android:textSize="18sp"
+						android:textColor="@android:color/black"
+					 android:background="@drawable/rounded_border_edittext"
+android:textAlignment="viewStart"
+  android:gravity="center"
+						android:padding="5dp"
+					android:visibility="gone"/>
+              <ImageView
+    android:id="@+id/btnSearch"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+						android:layout_centerVertical="true"
+						  android:gravity="center"
+    android:src="@drawable/baseline_search_black_18"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="16dp"
+    android:tint="#fff"
+    android:layout_marginLeft="15dp"/>
+            </RelativeLayout>
+          </android.support.v7.widget.Toolbar>
+	  <LinearLayout android:id="@+id/LoaderView"
+			android:layout_below="@id/toolbar"
+            android:visibility="gone"
+		android:gravity="center"
+          android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                  android:layout_gravity="center"
+                android:foregroundGravity="center"
+            app:lottie_fileName="animationload.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+          </LinearLayout>
+          
+     <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent" 
+                      android:orientation="vertical" 
+		android:layout_below="@id/toolbar">
+
+          <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	/>
+        
+          
+          
+         
+        </LinearLayout>  
+ 
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <android.support.v7.widget.CardView 
+	xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="wrap_content"
+	app:cardCornerRadius="8dp"
+	        app:cardElevation="0dp"
+       android:layout_marginBottom="@dimen/card_margin"
+        android:layout_marginLeft="@dimen/card_margin" 
+       android:layout_marginRight="@dimen/card_margin">  
+                <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="ArcticleName"
+            android:id="@+id/txtArcticleName"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="ArcticleAuthor"
+            android:id="@+id/txtArcticleAuthor"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:layout_below="@id/txtArcticleName" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="ArcticleDate"
+            android:paddingBottom="12dp"
+            android:id="@+id/txtArcticleDate"
+            android:gravity="center"
+            android:layout_below="@id/txtArcticleName"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+            </android.support.v7.widget.CardView>  
